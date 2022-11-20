@@ -105,3 +105,19 @@ var score = document.querySelector('#score');
 
 //requirement of initials of quizzed person
 var initials = document.querySelector('#initials')
+
+
+
+
+///The first thing is to get the questions to display. The user has started on the home page so they must be sent to the quiz page.
+
+startButton.addEventListener("click", function () {
+    quizContainer.style.display = "none";
+    questionContainer.removeAttribute("style");
+
+//This function will help you run the questions once 
+    beginQuestions();
+
+
+
+})
