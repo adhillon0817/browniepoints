@@ -120,16 +120,20 @@ startButton.addEventListener("click", function () {
 
 //REFERENCE UNIT 4 Activ. 10 Solved
 var timeInterval = setInterval(function(){
+//time left greater than one second
     if(timeLeft > 1) {
+//labels to seconds remaining
         count.textContent = timeLeft + ' seconds remaining';
+// decreasing the time by 1 second
         timeLeft--;
+//if the time is == to 1 second it will label it second remaining
     } else if (timeLeft === 1) {
         count.textContent = timeLeft + ' second remaining';
         timeLeft--;
+//One time is up it will present time over
     } else {
         count.textContent = 'Time Over!';
         clearInterval(timeInterval);
-
     }
 }, 1000);
 
