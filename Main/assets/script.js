@@ -64,8 +64,7 @@ var questions = [
 
 ]
 
-//Set the time countDown
-var countDown = 59;
+
 
 //variable for start button
 const startButton = document.querySelector('#startButton');
@@ -79,3 +78,30 @@ var questionContainer = document.querySelector('#questionContainer');
 
 // variable for options -- begin with 0 as 1st choice
 
+var option0 = document.querySelector('#option0');
+var option0 = document.querySelector('#option1');
+var option0 = document.querySelector('#option2');
+
+// setting variable for questions array:
+var questionStart = 0;
+
+//Set the time countDown
+var countDown = 59; 
+
+//set area for timer 
+var timer = document.querySelector('#timer');
+
+//question to be be displayed
+var questionView = document.querySelector('#questionView');
+
+//submit button for question
+var submitQuestion = document.querySelector('.submitQuestion');
+
+//get a response of write or wrong
+var answerResult = document.querySelector('answerResult');
+
+//Once finished with question need a score presented
+var score = document.querySelector('#score');
+
+//requirement of initials of quizzed person
+var initials = document.querySelector('#initials')
