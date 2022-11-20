@@ -89,7 +89,7 @@ var questionStart = 0;
 var countDown = 59; 
 
 //set area for timer 
-var timer = document.querySelector('#timer');
+var count = document.querySelector('#timer');
 
 //question to be be displayed
 var questionView = document.querySelector('#questionView');
@@ -118,6 +118,19 @@ startButton.addEventListener("click", function () {
 //This function will help you run the questions once 
     beginQuestions();
 
+//REFERENCE UNIT 4 Activ. 10 Solved
+var timeInterval = setInterval(function(){
+    if(timeLeft > 1) {
+        count.textContent = timeLeft + ' seconds remaining';
+        timeLeft--;
+    } else if (timeLeft === 1) {
+        count.textContent = timeLeft + ' second remaining';
+        timeLeft--;
+    } else {
+        count.textContent = 'Time Over!';
+        clearInterval(timeInterval);
 
+    }
+}, 1000);
 
-})
+});
