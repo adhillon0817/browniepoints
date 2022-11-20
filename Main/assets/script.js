@@ -117,7 +117,6 @@ function beginQuestions() {
     option1.textContent = questions[questionStart].options[1];
     option2.textContent = questions[questionStart].options[2];
 
-
 }
 
 
@@ -150,3 +149,5 @@ var timeInterval = setInterval(function(){
 }, 1000);
 
 });
+
+
