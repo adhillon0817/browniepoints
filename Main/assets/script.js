@@ -79,8 +79,8 @@ var questionContainer = document.querySelector('#questionContainer');
 // variable for options -- begin with 0 as 1st choice
 
 var option0 = document.querySelector('#option0');
-var option0 = document.querySelector('#option1');
-var option0 = document.querySelector('#option2');
+var option1 = document.querySelector('#option1');
+var option2 = document.querySelector('#option2');
 
 // setting variable for questions array:
 var questionStart = 0;
@@ -107,6 +107,18 @@ var score = document.querySelector('#score');
 var initials = document.querySelector('#initials')
 
 
+
+
+// we need to set the questions to run with a specific function 
+//Reference Day 3 Activity 25
+function beginQuestions() {
+    questionView.innerHTML = questions[questionStart].question;
+    option0.textContent = questions[questionStart].options[0];
+    option1.textContent = questions[questionStart].options[1];
+    option2.textContent = questions[questionStart].options[2];
+
+
+}
 
 
 ///The first thing is to get the questions to display. The user has started on the home page so they must be sent to the quiz page.
