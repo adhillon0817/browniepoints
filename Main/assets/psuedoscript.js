@@ -42,6 +42,8 @@
 
 // // for ( var i=0; i < questions.length )
 // // DECLARE  timerEL  -('#whatever the id is in html)
+
+
 // var timerEl = document.querySelector('#timer');
 
 // //function to start the quiz 

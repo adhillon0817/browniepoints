@@ -1,6 +1,4 @@
 
-//Set the time countDown
-var countDown = 59;
 
 //Creating the questions with the question, choices, and correct answer / each question is an object
 var questions = [
@@ -64,6 +62,20 @@ var questions = [
         answer: "three hundred"
     },
 
-
-
 ]
+
+//Set the time countDown
+var countDown = 59;
+
+//variable for start button
+const startButton = document.querySelector('#startButton');
+
+//variable for the quiz section
+const quizContainer = document.querySelector('#quizContainer');
+
+// variable for question section
+var questionContainer = document.querySelector('#questionContainer');
+
+
+// variable for options -- begin with 0 as 1st choice
+
