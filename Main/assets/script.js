@@ -70,14 +70,12 @@ var questions = [
 const startButton = document.querySelector('#startButton');
 
 //variable for the quiz section
-const quizContainer = document.querySelector('#quizContainer');
+const quizContainer = document.querySelector('#quizBox');
 
 // variable for question section
-var questionContainer = document.querySelector('#questionContainer');
-
+var questionContainer = document.querySelector('#questionbox');
 
 // variable for options -- begin with 0 as 1st choice
-
 var option0 = document.querySelector('#option0');
 var option1 = document.querySelector('#option1');
 var option2 = document.querySelector('#option2');
@@ -127,7 +125,7 @@ function beginQuestions() {
 
 startButton.addEventListener("click", function () {
     quizContainer.style.display = "none";
-    questionContainer.style.display("block");
+    questionContainer.style.display="block";
 
 //This function will help you run the questions once 
     beginQuestions();
