@@ -73,7 +73,7 @@ const startButton = document.querySelector('#startButton');
 const quizContainer = document.querySelector('#quizBox');
 
 // variable for question section
-var questionContainer = document.querySelector('#questionbox');
+var questionContainer = document.querySelector('#questionBox');
 
 // variable for options -- begin with 0 as 1st choice
 var option0 = document.querySelector('#option0');
@@ -96,7 +96,7 @@ var questionView = document.querySelector('#questionView');
 var submitQuestion = document.querySelector('.submitQuestion');
 
 //get a response of write or wrong
-var answerResult = document.querySelector('answerResult');
+var answerResult = document.querySelector('#answerResult');
 
 //finishing box to appear
 var finished = document.querySelector('#finished')
@@ -126,7 +126,7 @@ function beginQuestions() {
 startButton.addEventListener("click", function () {
     quizContainer.style.display = "none";
     questionContainer.removeAttribute="block";
-
+    questionContainer.style.display="block"
 //This function will help you run the questions once 
     beginQuestions();
 
