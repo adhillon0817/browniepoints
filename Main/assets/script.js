@@ -3,63 +3,63 @@
 //Creating the questions with the question, choices, and correct answer / each question is an object
 var questions = [
     {
-        question: "What is five plus five?",
-        options: ["ten", "one hundred", "six"],
-        answer: "ten"
+        question: "What is psudeocode?",
+        options: ["notes", "one hundred", "six"],
+        answer: "notes"
     },
 
     {
-        question: "What is six times thirty-six?",
-        options: ["seventy-two", "ninty-nine", "two-hundered sixteen"],
-        answer: "two-hundred sixteen"
+        question: "What is # related to in html?",
+        options: ["id tag", "class", "two-hundered sixteen"],
+        answer: "id tag"
     },
 
     {
-        question: "What is seven plus eight?",
-        options: ["twenty", "fifteen", "Oats"],
-        answer: "fifteen"
+        question: "Where can you do all the colorful addition to your site?",
+        options: ["script.js", "css", "Oats"],
+        answer: "css"
     },
 
     {
-        question: "What goes in coffee?",
-        options: ["Eggs", "Salt", "Sugar"],
-        answer: "Sugar"
+        question: "How do you do a NPM INSTALL?",
+        options: ["npm i", "node npm start", "npm go"],
+        answer: "npm i"
     },
 
     {
-        question: "What is five hundred plus one?",
-        options: ["five hundred one", "Oreo", "chocolate"],
-        answer: "five hundred one"
+        question: "How many html pages can you have?",
+        options: ["2", "As many as you like", "Just 1"],
+        answer: "As many as you like"
     },
 
     {
-        question: "What is ninty-nine minus three?",
-        options: ["ninty-six", "seven", "ninty-one"],
-        answer: "ninty-six"
+        question: "What is localstorage meant for?",
+        options: ["save stuff", "delete stuff", "join stuff"],
+        answer: "save stuff"
     },
 
     {
-        question: "What goes in brownies?",
-        options: ["Chocolate", "Strawberry", "Vanilla"],
-        answer: "Chocolate"
+        question: "What happens withought a README?",
+        options: ["You fail", "Your code creates another page", "Vanilla"],
+        answer: "You fail"
     },
 
     {
-        question: "If you multiply a number by a zero what happens?",
-        options: ["get a zero", "returns the same number", "gets you a negative number"],
-        answer: "get a zero"
+        question: "You should be adding a lot of ...?",
+        options: ["comments", "commas", "css"],
+        answer: "comments"
     },
 
     {
-        question: "Brownies are what color?",
-        options: ["Brown", "White", "Pink"],
-        answer: "Brown"
+        question: "What is the first step to doing a git push?",
+        options: ["git add .", "git commit -m ", "git push"],
+        answer: "git add ."
     },
 
     {
-        question: "Which is zero plus three hundred?",
-        options: ["ninty-nine", "three hundred", "seven"],
-        answer: "three hundred"
+        question: "What does !== mean?",
+        options: ["equal to", "greater than", "not equal to"],
+        answer: "not equal to"
     },
 
 ]
