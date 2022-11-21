@@ -12,5 +12,10 @@ SO THAT I can gauge my progress compared to my peers
 
 [You can reach the deployed site here!](https://adhillon0817.github.io/browniepoints/)
 
+View some sample looks with the images below!
+assets\another screen.png
+assets\First Scree.png
+assets\Second Screen.png
+
 ## Author
 Avleen Kaur Dhillon https://github.com/adhillon0817 
