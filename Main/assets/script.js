@@ -145,6 +145,7 @@ var timeInterval = setInterval(function(){
     } else {
         count.textContent = 'Time Over!';
         clearInterval(timeInterval);
+        endQuestions();
     }
 }, 1000);
 
@@ -183,6 +184,20 @@ questionStart++;
 
 // if the question start is less than the number of questions in the array then go to next quetion otherwise end the game
 //Unit 4 day 1 activ. 10
+if(questionStart >= questions.length) {
+    endQuestions();
+    clearInterval(timeInterval);
+}else {
+    beginQuestions();
+}
+}
 
 
-};
+//telling function to check the answers
+function check0() {gradeQuestion(0);}
+function check1() {gradeQuestion(1);}
+function check2() {gradeQuestion(2);}
+
+
+
+option0
