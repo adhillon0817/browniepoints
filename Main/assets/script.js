@@ -169,7 +169,17 @@ function endQuestions (event) {
     clearInterval(timeInterval);
 //stops the timer from running
     countDown = stop;
+//this is the portion where the score should be presnented and the initials should be taken of player.
+    function Score() {
+        var Name = {
+            name: initials,
+            score: countDown
+        };
+        console.log(Name);
 
+    }
+
+    Score();
 }
 
 // if (nextTag === true) {
