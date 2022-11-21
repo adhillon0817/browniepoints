@@ -100,6 +100,9 @@ var submitQuestion = document.querySelector('.submitQuestion');
 //get a response of write or wrong
 var answerResult = document.querySelector('answerResult');
 
+//finishing box to appear
+var finished = document.querySelector('#finished')
+
 //Once finished with question need a score presented
 var score = document.querySelector('#score');
 
@@ -132,15 +135,15 @@ startButton.addEventListener("click", function () {
 //REFERENCE UNIT 4 Activ. 10 Solved
 var timeInterval = setInterval(function(){
 //time left greater than one second
-    if(timeLeft > 1) {
+    if(countDown > 1) {
 //labels to seconds remaining
-        count.textContent = timeLeft + ' seconds remaining';
+        count.textContent = countDown + ' seconds remaining';
 // decreasing the time by 1 second
-        timeLeft--;
+        countDown--;
 //if the time is == to 1 second it will label it second remaining
-    } else if (timeLeft === 1) {
-        count.textContent = timeLeft + ' second remaining';
-        timeLeft--;
+    } else if (countDown === 1) {
+        count.textContent = countDown + ' second remaining';
+        countDown--;
 //One time is up it will present time over
     } else {
         count.textContent = 'Time Over!';
@@ -151,6 +154,23 @@ var timeInterval = setInterval(function(){
 
 });
 
+
+//create a function for ending game which is ending the questions from populating and taking to next page
+
+function endQuestions (event) {
+//ends the countdown
+    var stop = countDown;
+//with the end there will be no more questions
+    questionContainer.style.display = "No Questions";
+    finished.style.display = "block";
+//presents with score
+    score.textContent = "You got a" + countDown + "!";
+//clears the time
+    clearInterval(timeInterval);
+//stops the timer from running
+    countDown = stop;
+
+}
 
 // if (nextTag === true) {
 //     var secondTagName = prompt("Please enter another  HTML Tag (ex. h1, h2, p, div):", "enter tag here");
@@ -176,7 +196,7 @@ if ((questions[questionStart].answer === questions[questionStart].options[answer
 countDown -=10;
 
 //this function is to respond when the answer is incorrect and there is no time left.
-}else if ((questions[questionStart].answer !== questions[questionStart].options[answer]) && (timeLeft <=10)){answerResult.textContent = "Incorrect Response";
+}else if ((questions[questionStart].answer !== questions[questionStart].options[answer]) && (countDown <=10)){answerResult.textContent = "Incorrect Response";
 countDown = 0;
 }
 //increment the question
