@@ -150,4 +150,11 @@ var timeInterval = setInterval(function(){
 
 });
 
-
+//refer to day 1 activity 7
+//getting into the question array and comparing the options to the correct answer
+function gradeQuestion (answer) {
+    answerResult.style.display = "block";
+//if the option selected is equal to the answer and there is still time remaining then display a message.
+    if ((questions[questionStart].answer === questions[questionStart].options[answer]) && (timeLeft >=0)) {answerResult.textContent = "Correct Response";
+}
+}
