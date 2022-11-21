@@ -150,11 +150,24 @@ var timeInterval = setInterval(function(){
 
 });
 
-//refer to day 1 activity 7
+
+// if (nextTag === true) {
+//     var secondTagName = prompt("Please enter another  HTML Tag (ex. h1, h2, p, div):", "enter tag here");
+//     if(secondTagName !== "h1" && secondTagName !== "h2" && secondTagName !== "p" && secondTagName !== "div") {
+//       alert("please enter a valid tag");
+//     } else {
+//       var secondTag = document.createElement(secondTagName);
+//       secondTag.textContent = "This is our second tag via prompts, it's a " + secondTagName + ".";
+//       document.body.appendChild(secondTag);
+//     }
+//   }
+
+
+//refer to day 1 activity 7  (use above as example)
 //getting into the question array and comparing the options to the correct answer
 function gradeQuestion (answer) {
     answerResult.style.display = "block";
 //if the option selected is equal to the answer and there is still time remaining then display a message.
     if ((questions[questionStart].answer === questions[questionStart].options[answer]) && (timeLeft >=0)) {answerResult.textContent = "Correct Response";
-}
+}else if (())
 }
