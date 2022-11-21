@@ -125,7 +125,7 @@ function beginQuestions() {
 
 startButton.addEventListener("click", function () {
     quizContainer.style.display = "none";
-    questionContainer.style.display="block";
+    questionContainer.removeAttribute="style";
 
 //This function will help you run the questions once 
     beginQuestions();
@@ -173,8 +173,9 @@ function endQuestions (event) {
             name: initials,
             score: countDown
         };
-        console.log(Name);
 
+        
+        console.log(Name);
     }
 
     Score();

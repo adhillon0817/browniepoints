@@ -8,25 +8,25 @@
     <title>QUIZ FOR SOME BROWNIE POINTS!</title>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
+  
+  
   <body>
-    <header>
+    <nav class="nav">
         <!-- //when going from one page to the next -->
-        <a href="./highscores.html">View Highscores</a>
-        <div>
-            Timer: <span id="timer">60 SECONDS</span>
-        </div>
-    </header>
+        <a class="score" href="./highscores.html">View Highscores</a>
+        <p id="timer" class="timer">Timer at 60 seconds</p>
+    </nav>
 <!-- Top section of page -->
-    <section id="quizBox">
+    <section id="quizBox" class="quiz-container">
       <h1>Quiz For Brownies!</h1>
-      <div id="startButton">
+      <div id="startButton" class="button">
         <button>Start Getting Brownie Points!</button>
       </div>
     </section>
    
 <!-- Middle where questions and options will appear -->
-<section id="questionBox">
-  <div id="questionView" class="question"> Questions </div>
+<section id="questionBox" class="question-container" style="display: none;">
+  <h1 id="questionView">Question</h1>
   <!-- button for each option -->
 
   <div class="box"> 
