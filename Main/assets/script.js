@@ -162,7 +162,7 @@ function endQuestions (event) {
     questionContainer.style.display = "No Questions";
     finished.style.display = "block";
 //presents with score
-    score.textContent = "You got a" + countDown + "!";
+    score.textContent = "You got a " + countDown + "!";
 //clears the time
     clearInterval(timeInterval);
 //stops the timer from running
