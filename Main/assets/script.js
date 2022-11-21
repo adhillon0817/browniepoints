@@ -171,6 +171,7 @@ function endQuestions (event) {
 
 }
 
+//this function is taking the name and score and putting it into Score()
 function Score() {
     var Name = {
         name: initials,
@@ -180,6 +181,8 @@ function Score() {
 
     console.log(Name);
 }
+
+//next step is to add a local storage where I am getting the information, setting the information, and then doing a post.
 
 // if (nextTag === true) {
 //     var secondTagName = prompt("Please enter another  HTML Tag (ex. h1, h2, p, div):", "enter tag here");
