@@ -168,6 +168,8 @@ var timeInterval = setInterval(function(){
 function gradeQuestion (answer) {
     answerResult.style.display = "block";
 //if the option selected is equal to the answer and there is still time remaining then display a message.
-    if ((questions[questionStart].answer === questions[questionStart].options[answer]) && (timeLeft >=0)) {answerResult.textContent = "Correct Response";
-}else if (())
+if ((questions[questionStart].answer === questions[questionStart].options[answer]) && (timeLeft >=0)) {answerResult.textContent = "Correct Response";
+//this function will take the answer and options and compare. When it is not equal to each other and there is time left, then the message of incorrect response will display
+}else if ((questions[questionStart].answer !== questions[questionStart].options[answer]) && (timeLeft >=10)){answerResult.textContent = "Incorrect Response";
+timeLeft -=10;
 }
