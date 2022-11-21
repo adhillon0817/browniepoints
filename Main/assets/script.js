@@ -168,17 +168,17 @@ function endQuestions (event) {
 //stops the timer from running
     countDown = stop;
 //this is the portion where the score should be presnented and the initials should be taken of player.
-    function Score() {
-        var Name = {
-            name: initials,
-            score: countDown
-        };
+
+}
+
+function Score() {
+    var Name = {
+        name: initials,
+        score: countDown
+    };
 
 
-        console.log(Name);
-    }
-
-    Score();
+    console.log(Name);
 }
 
 // if (nextTag === true) {
@@ -191,7 +191,6 @@ function endQuestions (event) {
 //       document.body.appendChild(secondTag);
 //     }
 //   }
-
 
 //refer to day 1 activity 7  (use above as example)
 //getting into the question array and comparing the options to the correct answer
@@ -219,6 +218,8 @@ if(questionStart >= questions.length) {
 }else {
     beginQuestions();
 }
+
+
 }
 
 
@@ -232,3 +233,4 @@ option1.addEventListener("click", check1)
 function check2() {gradeQuestion(2);}
 option2.addEventListener("click", check2)
 
+submitButton.addEventListener("click", Score);
