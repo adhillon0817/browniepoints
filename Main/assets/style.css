@@ -1,0 +1,14 @@
+body {
+    /* added font */
+    font-family: Arial, Helvetica, sans-serif;
+    /* set it to one side of page */
+    margin: 0;
+    /* got it on one line next to each other*/
+    display: flex;
+    /* set it to be on top of each other */
+    flex-direction: column;
+
+    /* set body color */
+    background-color: azure;
+
+}
