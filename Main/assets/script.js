@@ -193,11 +193,13 @@ if(questionStart >= questions.length) {
 }
 
 
-//telling function to check the answers
+//setting the check function to run through each option and selection to grade it which means each option runs through and matches if its right or wrong
 function check0() {gradeQuestion(0);}
+option0.addEventListener("click", check0)
+
 function check1() {gradeQuestion(1);}
+option1.addEventListener("click", check1)
+
 function check2() {gradeQuestion(2);}
+option2.addEventListener("click", check2)
 
-
-
-option0
