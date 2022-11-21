@@ -178,7 +178,11 @@ countDown -=10;
 }else if ((questions[questionStart].answer !== questions[questionStart].options[answer]) && (timeLeft <=10)){answerResult.textContent = "Incorrect Response";
 countDown = 0;
 }
-
+//increment the question
 questionStart++;
+
+// if the question start is less than the number of questions in the array then go to next quetion otherwise end the game
+//Unit 4 day 1 activ. 10
+
 
 };
